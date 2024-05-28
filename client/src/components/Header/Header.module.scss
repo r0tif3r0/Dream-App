@@ -1,0 +1,77 @@
+.navbar {
+    height: 50px;
+    background-color: #333;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  
+    .leftSection {
+      flex: 1;
+  
+      .appName {
+        color: #fff;
+        font-size: 2rem;
+
+        .link  {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  
+    .centerSection {
+      flex: 2;
+      text-align: center;
+  
+      .navbarNav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+  
+        .navItem {
+          margin-right: 15px;
+  
+          .navLink {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1.3rem;
+  
+            &:hover {
+              background-color: #555;
+            }
+          }
+        }
+      }
+    }
+  
+    .rightSection {
+      flex: 1;
+      text-align: right;
+
+      li {
+        list-style-type: none;
+      }
+  
+      .loginButton {
+        background-color: #fff;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 35px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        color: #000000;
+        font-size: 17px;
+        background-color: #ffffff;
+        cursor: pointer;
+
+          &:hover {
+              background-color: darken($color: #209fff, $amount: 10);
+          }
+      }
+    }
+  }

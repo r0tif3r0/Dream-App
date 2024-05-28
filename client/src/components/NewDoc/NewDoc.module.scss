@@ -1,0 +1,95 @@
+.newDoc {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+
+    .newDocForm{
+        margin-top: 10%;
+        padding: 20px;
+        border-radius: 12px;
+        width: 600px;
+        background-color: white;
+        transform: scale(0.5);
+        transition: 0.4s all;
+
+        .title__form {
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+
+        .input__field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            p {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .input {
+                padding: 10px;
+                border: 1px solid #D8DADC;
+                border-radius: 17px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                outline:none;
+
+                &:focus {
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+
+        .submit__btn {
+            display: flex;
+            width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            border: 0px;
+            border-radius: 35px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            color: #000000;
+            font-size: 20px;
+            background-color: #ffffff;
+            cursor: pointer;
+
+            p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &:hover {
+                background-color: darken($color: #209fff, $amount: 10);
+            }
+        }
+
+        .templates {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+}
+
+.newDoc.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.newDocForm.active {
+    transform: scale(1);
+}

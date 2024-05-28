@@ -1,0 +1,94 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 500px;
+    height: 50vh;
+    border-radius: 20px;
+    border: 1px solid #00000056;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+
+    .content {
+        flex: 1 0 auto;
+    }
+
+    p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .options {
+        max-width: 200px;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    .docInfo {
+        p {
+            padding-left: 15px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    
+    .docComments {
+        p {
+            background-color: #f3ff82a1;
+            border: 1px solid #00000056;
+            border-radius: 20px;
+            margin: 15px;
+            padding: 8px;
+            padding-left: 35px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+   .docVersions {
+        p {
+            cursor: pointer;
+            border: 1px solid #00000056;
+            border-radius: 20px;
+            margin: 15px;
+            padding: 8px;
+            background-color: #a5ff829c;
+            padding-left: 35px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 400;
+            &:hover {
+                background-color: darken($color: #a5ff82, $amount: 20);
+            }
+        }
+        
+   }
+
+   .buttonsBlock {
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+
+        button {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            margin-top: 50px;
+            font-size: 1.1rem;
+            border: none;
+            border: 0px;
+            border-radius: 35px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            color: #000000;
+            background-color: #ffffff;
+            cursor: pointer;
+      
+              &:hover {
+                  background-color: darken($color: #209fff, $amount: 10);
+              }
+          }
+   }
+}
